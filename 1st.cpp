@@ -8,4 +8,5 @@ int main(){
     cout<<"Mai Nikhil Hu";
     cout<<"\n";
     cout<<"Mai Nikhil Hu";
+    cout<<"Mai Nikhil Hu";
 }
