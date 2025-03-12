@@ -1,4 +1,4 @@
-//Merge Two Sorted array
+//Merge Two Sorted array by optimal 
 #include<bits/stdc++.h>
 using namespace std;
 void merge(int arr1[],int n,int arr2[],int m){
