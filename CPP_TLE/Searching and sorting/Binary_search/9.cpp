@@ -12,6 +12,15 @@ int pickElement(int arr[], int n){
     while(left<=right){
         int mid=left+(right-left)/2;
 
+        //Method 1
+
+        if(arr[left]<=arr[right]){
+            ans=min(ans,arr[left]);
+            break;
+        }
+
+        //Method 2
+
         if(arr[mid]>=arr[left]){
             ans=min(ans,arr[left]);
             left=mid+1;
