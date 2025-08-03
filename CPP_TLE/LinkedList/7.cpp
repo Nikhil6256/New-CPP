@@ -38,10 +38,23 @@ class node{
         return head;
     }
 
+    node*removetail(node* head){
+        if(head==NULL || head -> next ==NULL)
+        return NULL;
+
+        node* temp = head;
+        while(temp->next->next != NULL){
+            temp = temp -> next;
+        }
+        delete temp->next;
+        temp->next=nullptr;
+        return head;
+    }
+
 int main()
 {
     vector<int>v={2,4,5,6};
     node* head=ConvertArr2LL(v);
-    head= removehead(head);
+    head= removetail(head);
     print(head);
 }
